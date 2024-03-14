@@ -3,7 +3,12 @@ import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 const app = new Application();
 const router = new Router();
 
-const SESSDATA = 'SESSDATA=cdc1ee1b%2C1725825104%2C10469%2A31CjC56fJdcJHxPN83DDnjLbO9E-kMOdHFF2-X5vHRGkvTQLqkLfVwNSKF9PztioT9dagSVnBGOEF5U0lZcFVaUV94LWVhODRsR2NSeUZhVURyZDEtWFA2czBPNy13S2o4SS1Db3pXOWVoQ0V5dExVZUtYZ2NMNkJzVUxYV3o0RlNpSTNMLXJHSUVRIIEC';
+const SESSDATA = 'SESSDATA=a0f846c7%2C1725987757%2C84520%2A32CjDW4HcAPwdjNGWvCeXt_Jp6JegXhP_1faDwa5eaKg8k2eIm6CxURxtxjIAfJoWu51MSVkd2YlFrMEVzWi1lcHlSd2lpMG5haXFFX3NMVU9jNmhMRURGS0VzV2JXNUJ4aWVzRUFGQ2g0ZFl0MGZ4QzcxZEQ3dG1wOVJDQ1d0WjBSMmVOLXdNTTZ3IIEC';
+
+
+router.get("/", async (ctx) => {
+  ctx.response.body = "臭小鬼，就凴你想知道什麽";
+})
 
 // 定义路由处理程序
 router.get("/ip", async (ctx) => {
